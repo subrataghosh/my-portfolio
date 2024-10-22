@@ -1,6 +1,44 @@
+"use client";
+
+import { useState, useEffect } from 'react';
 import type { NextPage } from "next";
 
+interface UserContactMe {
+    id: string;
+    email: string;
+    name: string | null;
+    subject: string | null;
+    message: string | null;
+  }
+
 const Contact: NextPage = () => {
+    // const [users, setUsers] = useState<User[]>([]);
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [message, setMessage] = useState('');
+
+//   useEffect(() => {
+//     fetch('/api/users')
+//       .then((res) => res.json())
+//       .then((data) => setUsers(data));
+//   }, []);
+
+  const sendMessage = async () => {
+    const response = await fetch('/api/userContactMe', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email, name, message }),
+    });
+
+    if (response.ok) {
+        setEmail('');
+        setName('');
+        setMessage('');
+    }
+  };
+
   return (
     <>
       <section className="contact section" id="contact">
@@ -50,6 +88,7 @@ const Contact: NextPage = () => {
                       type="text"
                       className="form-control"
                       placeholder="Name*"
+                      onChange={(e) => setName(e.target.value)}
                     />
                   </div>
                 </div>
@@ -59,6 +98,7 @@ const Contact: NextPage = () => {
                       type="email"
                       className="form-control"
                       placeholder="Email*"
+                      onChange={(e) => setEmail(e.target.value)}
                     />
                   </div>
                 </div>
@@ -81,13 +121,14 @@ const Contact: NextPage = () => {
                       className="form-control"
                       placeholder="Your Message*"
                       defaultValue={""}
+                      onChange={(e) => setMessage(e.target.value)}
                     />
                   </div>
                 </div>
               </div>
               <div className="row">
                 <div className="col-12 padd-15">
-                  <button type="submit" className="btn">
+                  <button type="submit" className="btn" onClick={sendMessage}>
                     Send Message
                   </button>
                 </div>
