@@ -38,7 +38,7 @@ const Sidebar = () => {
               href="/about"
               className={`${pathUrl == "/about" && "active"}`}
             >
-              <i className="fa fa-user" /> About
+              <i className="fa fa-user" /> About Me
             </Link>
           </li>
           {/* <li onClick={handleClose}>
@@ -67,14 +67,14 @@ const Sidebar = () => {
               href="/contact"
               className={`${pathUrl == "/contact" && "active"}`}
             >
-              <i className="fa fa-comments" /> Contact
+              <i className="fa fa-comments" /> Contact Me
             </Link>
           </li>
         </ul>
         <div className="copyright">
-          Hosted at {" "}
-          <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">
-            Vercel.
+          Hosted at  {"  "}
+          <a href="https://vercel.com/" style={{'color':'#302e4d'}} target="_blank" rel="noopener noreferrer">
+            <strong>Vercel.</strong>
           </a>
         </div>
       </div>

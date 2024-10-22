@@ -487,9 +487,9 @@ align-items: center;
   margin: 0;
 }
 .about .about-content .personal-info {
-  -ms-flex: 0 0 60%;
+  /* -ms-flex: 0 0 60%;
   flex: 0 0 60%;
-  max-width: 60%;
+  max-width: 60%; */
   margin-top: 40px;
 }
 .about .about-content .personal-info .info-item {
@@ -565,15 +565,15 @@ align-items: center;
   font-weight: 400;
 }
 .about .about-content .education {
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  max-width: 50%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
   margin-top: 30px;
 }
 .about .about-content .experience {
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  max-width: 50%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
   margin-top: 30px;
 }
 .about .about-content h3.title {
@@ -631,10 +631,19 @@ align-items: center;
 .about .about-content .timeline .timeline-title {
   font-weight: 700;
   font-size: 18px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   text-transform: capitalize;
   color: #302e4d;
 }
+
+.about .about-content .timeline .timeline-desc {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: #302e4d;
+}
+
 .about .about-content .timeline .timeline-text {
   font-size: 16px;
   line-height: 25px;
@@ -1127,6 +1136,7 @@ align-items: center;
 [data-theme='dark'] .portfolio .portfolio-filter button,
 [data-theme='dark'] .service .service-item .service-item-inner h4,
 [data-theme='dark'] .about .about-content .timeline .timeline-title,
+[data-theme='dark'] .about .about-content .timeline .timeline-desc,
 [data-theme='dark'] .about .about-content h3.title,
 [data-theme='dark'] .about .about-content .skills .skill-item h5,
 [data-theme='dark'] .about .about-content .personal-info .info-item p,
@@ -1148,6 +1158,7 @@ align-items: center;
 [data-theme='dark'] .about .about-content .skills .skill-item .skill-percent,
 [data-theme='dark'] .about .about-content .personal-info .info-item p span,
 [data-theme='dark'] .about .about-content .about-text p,
+[data-theme='dark'] .skills-txt,
 [data-theme='dark'] .home .intro p {
   color: #e9e9e9;
 }
@@ -1281,4 +1292,60 @@ align-items: center;
 .animated-section p {
     font-size: 1.2rem;
     color: #666;
+}
+
+.adj-img {
+    width: 85px;
+    height: 85px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.col-4 {
+    -ms-flex: 0 0 12.333333%;
+    flex: 0 0 12.333333%;
+    max-width: 12.333333%;
+    padding: 15px;
+}
+
+/* Styles for tablets (col-4-m) */
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .col-4 {
+        -ms-flex: 0 0 15.333333%;
+        flex: 0 0 15.333333%;
+        max-width: 15.333333%;
+    }
+}
+
+/* Styles for large mobile devices (col-4-s) */
+@media (max-width: 576px) { /* Adjust breakpoint as needed */
+    .col-4 {
+        -ms-flex: 0 0 25.333333%;
+        flex: 0 0 25.333333%;
+        max-width: 25.333333%;
+    }
+}
+
+/* Styles for medium mobile devices (col-4-xs) */
+@media (max-width: 425px) { /* Adjust breakpoint as needed */
+    .col-4 {
+        -ms-flex: 0 0 30.333333%;
+        flex: 0 0 30.333333%;
+        max-width: 30.333333%;
+    }
+}
+
+.pt-5 {
+    margin-top: 5px;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.pb-5 {
+    margin-bottom: 5px;
 }
