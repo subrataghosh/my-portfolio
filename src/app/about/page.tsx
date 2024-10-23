@@ -27,7 +27,7 @@ const About: NextPage = () => {
                   <div className="row">
                     <div className="info-item padd-15">
                       <p>
-                        Website : <span>www.urfolio.vercel.app</span>
+                        Website : <span>my-portfolio-eight-chi-52.vercel.app</span>
                       </p>
                     </div>
                     <div className="info-item padd-15">
@@ -164,10 +164,10 @@ const About: NextPage = () => {
                                     <img src="/imgs/teck/mongo-db.png" className="adj-img"/> 
                                     <p className="pt-5 skills-txt">NoSQL</p> 
                                 </div>
-                                <div className="col-4 txt-center"> 
+                                {/* <div className="col-4 txt-center"> 
                                     <img src="/imgs/teck/office-logo.png" className="adj-img"/> 
                                     <p className="pt-5 skills-txt">Office Utilities</p> 
-                                </div>
+                                </div> */}
                                 <div className="col-4 txt-center"> 
                                     <img src="/imgs/teck/tomcat.png" className="adj-img"/> 
                                     <p className="pt-5 skills-txt">Apache Tomcat</p> 
