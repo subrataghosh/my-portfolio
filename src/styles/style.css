@@ -1349,3 +1349,11 @@ align-items: center;
 .pb-5 {
     margin-bottom: 5px;
 }
+
+@media (max-width: 575px) {
+    .about .about-content .personal-info .info-item {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

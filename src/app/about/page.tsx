@@ -27,7 +27,7 @@ const About: NextPage = () => {
                   <div className="row">
                     <div className="info-item padd-15">
                       <p>
-                        Website : <span>my-portfolio-eight-chi-52.vercel.app</span>
+                        Website : <span>www.subrataghosh.in</span>
                       </p>
                     </div>
                     <div className="info-item padd-15">
