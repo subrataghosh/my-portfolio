@@ -1,15 +1,15 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import type { NextPage } from "next";
 
-interface UserContactMe {
-    id: string;
-    email: string;
-    name: string | null;
-    subject: string | null;
-    message: string | null;
-  }
+// interface UserContactMe {
+//     id: string;
+//     email: string;
+//     name: string | null;
+//     subject: string | null;
+//     message: string | null;
+//   }
 
 const Contact: NextPage = () => {
     // const [users, setUsers] = useState<User[]>([]);

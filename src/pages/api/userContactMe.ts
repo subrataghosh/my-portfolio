@@ -20,7 +20,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         });
         res.status(201).json(user);
       } catch (error) {
-        res.status(500).json({ error: 'Error sending user message' });
+        res.status(500).json({ error: 'Error sending user message :' + error });
       }
       break;
 
