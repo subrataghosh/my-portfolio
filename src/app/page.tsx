@@ -10,7 +10,7 @@ export default async function Home() {
           <div className="intro">
             <img
               src="/imgs/subrata-ghosh.png"
-              alt="Test Profile"
+              alt="Subrata Ghosh Profile"
               className="shadow-dark"
             />
             <h1>Subrata Ghosh</h1>
@@ -32,6 +32,14 @@ export default async function Home() {
                 <i className="fa fa-instagram" />
               </a>
             </div>
+            <a href="/about" className="show-more-a" >
+            <img
+              src="/imgs/find-more.png"
+              alt="Subrata Ghosh Show more"
+              className="show-more"
+            />
+            <div className="hover-text">Know more about me!</div>
+            </a>
           </div>
         </div>
       </section>

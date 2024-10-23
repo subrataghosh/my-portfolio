@@ -427,6 +427,37 @@ align-items: center;
   display: inline-block;
   border: 8px solid #ffffff;
 }
+.home .intro .show-more {
+    margin-top: 10px;
+    width: 35px;
+    height: 35px;
+    /* border-radius: 50%; */
+    display: inline-block;
+    border: 0px solid #ffffff;
+}
+
+.home .intro .show-more:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.hover-text {
+    position: absolute;
+    /* bottom: 10px;  */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.show-more-a:hover .hover-text {
+    opacity: 1; /* Show text on hover */
+}
+
 .home .intro h1 {
   font-size: 30px;
   color: #302e4d;
