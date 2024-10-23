@@ -7,13 +7,28 @@ import "../styles/theme.css";
 import Sidebar from "@/components/sidebar/sidebar";
 import Providers from "./providers";
 import ThemeSwitch from "@/components/panel/ThemeSwitch";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Folio the best Portfolio or Personal Website",
-  description:
-    "Folio is the best portfolio or personal website for developer, creator or businessman.",
+  title: "Subrata Ghosh",
+  description: "'Developer | Senior Software Engineer | Technology Enthusiast'",
+  openGraph: {
+    title: "Subrata Ghosh",
+    description: "'Developer | Senior Software Engineer | Technology Enthusiast'",
+    url: "https://www.subrataghosh.in",
+    siteName: "Subrata Ghosh",
+    type: "website",
+    images: [
+      {
+        url: "https://www.subrataghosh.in/subrata-ghosh.png", 
+        width: 800,
+        height: 600,
+        alt: "Subrata Ghosh"
+      }
+    ]
+  }
 };
 
 export default function RootLayout({
@@ -23,6 +38,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <body className={inter.className}>
         <Providers>
           <ThemeSwitch />

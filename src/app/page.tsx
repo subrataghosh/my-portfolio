@@ -9,7 +9,7 @@ export default async function Home() {
             <CanvasBackground />
           <div className="intro">
             <img
-              src="/imgs/test.jfif"
+              src="/imgs/subrata-ghosh.png"
               alt="Test Profile"
               className="shadow-dark"
             />
