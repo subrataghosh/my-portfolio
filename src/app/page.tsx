@@ -22,6 +22,9 @@ export default async function Home() {
               <a href="https://github.com/subrataghosh" target="_blank">
                 <i className="fa fa-github" />
               </a>
+              <a href="https://stackoverflow.com/users/7693739/subratag" target="_blank">
+                <i className="fa fa-stack-overflow" />
+              </a>
               <a href="https://www.facebook.com/share/127C5VyWhNH/" target="_blank">
                 <i className="fa fa-facebook" />
               </a>
