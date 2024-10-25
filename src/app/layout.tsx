@@ -7,7 +7,6 @@ import "../styles/theme.css";
 import Sidebar from "@/components/sidebar/sidebar";
 import Providers from "./providers";
 import ThemeSwitch from "@/components/panel/ThemeSwitch";
-import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -77,13 +76,15 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <Head>
+      <head>
         <link rel="icon" href="/favicon.ico" />
+        
+        {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
-       </Head>
+      </head>
        
       <body className={inter.className}>
         <Providers>
