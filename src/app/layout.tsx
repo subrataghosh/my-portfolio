@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import  Script  from 'next/script';
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "../styles/style.css";
@@ -40,8 +41,11 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <script
+       </Head>
+       <Script
           type="application/ld+json"
+          id="json-ld"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
                 "@context": "https://schema.org",
@@ -82,7 +86,6 @@ export default function RootLayout({
               })
           }}
         />
-      </Head>
       <body className={inter.className}>
         <Providers>
           <ThemeSwitch />
