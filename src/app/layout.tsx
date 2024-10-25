@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import  Script  from 'next/script';
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "../styles/style.css";
@@ -37,55 +36,55 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
+    const jsonLdData = {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Subrata Ghosh",
+        "url": "https://www.subrataghosh.in",
+        "image": "https://www.subrataghosh.in/subrata-ghosh.png",
+        "jobTitle": "Full Stack Web Application Developer",
+        "description": "Subrata Ghosh is a Full Stack Developer with expertise in building efficient and user-friendly web applications.",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "TwoPiRadian Infotech Pvt Ltd"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/subrata-ghosh-90465695",
+          "https://github.com/subrataghosh",
+          "https://www.facebook.com/share/127C5VyWhNH"
+        ],
+        "knowsAbout": [
+          "Web Development",
+          "Front-end Development",
+          "Back-end Development",
+          "Full Stack Developer",
+          "Java",
+          "JavaScript",
+          "React",
+          "Node.js",
+          "MongoDB",
+          "SQL"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "mailto:subrata.ghosh.ece@gmail.com",
+          "contactType": "Customer Support",
+          "areaServed": "Worldwide",
+          "availableLanguage": ["English"]
+        }
+    };
+
   return (
     <html lang="en">
       <Head>
         <link rel="icon" href="/favicon.ico" />
-       </Head>
-       <Script
+        <script
           type="application/ld+json"
-          id="json-ld"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "Person",
-                "name": "Subrata Ghosh",
-                "url": "https://www.subrataghosh.in",
-                "image": "https://www.subrataghosh.in/subrata-ghosh.png",
-                "jobTitle": "Full Stack Web Application Developer",
-                "description": "Subrata Ghosh is a Full Stack Developer with expertise in building efficient and user-friendly web applications.",
-                "worksFor": {
-                  "@type": "Organization",
-                  "name": "TwoPiRadian Infotech Pvt Ltd"
-                },
-                "sameAs": [
-                  "https://www.linkedin.com/in/subrata-ghosh-90465695",
-                  "https://github.com/subrataghosh",
-                  "https://www.facebook.com/share/127C5VyWhNH"
-                ],
-                "knowsAbout": [
-                  "Web Development",
-                  "Front-end Development",
-                  "Back-end Development",
-                  "Full Stack Developer",
-                  "Java",
-                  "JavaScript",
-                  "React",
-                  "Node.js",
-                  "MongoDB",
-                  "SQL"
-                ],
-                "contactPoint": {
-                  "@type": "ContactPoint",
-                  "email": "mailto:subrata.ghosh.ece@gmail.com",
-                  "contactType": "Customer Support",
-                  "areaServed": "Worldwide",
-                  "availableLanguage": ["English"]
-                }
-              })
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
+       </Head>
+       
       <body className={inter.className}>
         <Providers>
           <ThemeSwitch />
