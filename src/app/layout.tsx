@@ -40,6 +40,7 @@ export default function RootLayout({
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Subrata Ghosh",
+        "telephone": "+918420982123",
         "url": "https://www.subrataghosh.in",
         "image": "https://www.subrataghosh.in/subrata-ghosh.png",
         "jobTitle": "Full Stack Web Application Developer",
@@ -71,7 +72,20 @@ export default function RootLayout({
           "contactType": "Customer Support",
           "areaServed": "Worldwide",
           "availableLanguage": ["English"]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "IN",
+          "addressLocality": "Kolkata",
+          "addressRegion": "WB"
         }
+    };
+
+    const jsonLdData1 = {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Subrata Ghosh",
+        "url": "https://www.subrataghosh.in"
     };
 
   return (
@@ -83,6 +97,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData1) }}
         />
       </head>
        
