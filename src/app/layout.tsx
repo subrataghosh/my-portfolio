@@ -13,7 +13,17 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Subrata Ghosh",
   description: "Subrata Ghosh, a skilled Full Stack Developer specializing in building efficient and user-friendly web applications. Learn more about Subrata's projects, skills, and expertise in modern web development.",
-  keywords: "Subrata Ghosh, Full Stack Developer, Software Engineer, Web Development, Front-end Development, Back-end Development, JavaScript, React, Node.js, MongoDB",
+  keywords: ["Subrata Ghosh", 
+    "Full Stack Developer", 
+    "Software Engineer", 
+    "Web Development", 
+    "Front-end Development", 
+    "Back-end Development", 
+    "JavaScript", 
+    "React", 
+    "Node.js", 
+    "MongoDB"
+  ],
   openGraph: {
     title: "Subrata Ghosh",
     description: "Subrata Ghosh, a skilled Full Stack Developer specializing in building efficient and user-friendly web applications. Learn more about Subrata's projects, skills, and expertise in modern web development.",
