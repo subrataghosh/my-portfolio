@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Subrata Ghosh",
-  description: "Subrata Ghosh, a skilled Full Stack Developer specializing in building efficient and user-friendly web applications. Learn more about Subrata's projects, skills, and expertise in modern web development.",
+  description: "Explore the professional portfolio of Subrata Ghosh, a skilled Full Stack Web Application Developer with expertise in crafting dynamic, responsive, and user-friendly web applications. With proficiency in both front-end and back-end technologies, including HTML, CSS, JavaScript, and popular frameworks, Subrata creates innovative digital solutions that bridge functionality with aesthetics. Discover more about Subrata’s journey, technical expertise, and passion for web development in the About Me section, view recent projects, and learn how Subrata can help bring your web application ideas to life. Connect directly through the Contact Me page to collaborate on your next digital project. Whether you’re a business looking to enhance your online presence or a team in need of development support, Subrata Ghosh’s experience in full stack development is here to help. Let’s create something amazing together!",
   keywords: ["Subrata Ghosh", 
     "Full Stack Developer", 
     "Software Engineer", 
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Subrata Ghosh",
-    description: "Subrata Ghosh, a skilled Full Stack Developer specializing in building efficient and user-friendly web applications. Learn more about Subrata's projects, skills, and expertise in modern web development.",
+    description: "Explore the professional portfolio of Subrata Ghosh, a skilled Full Stack Web Application Developer with expertise in crafting dynamic, responsive, and user-friendly web applications. With proficiency in both front-end and back-end technologies, including HTML, CSS, JavaScript, and popular frameworks, Subrata creates innovative digital solutions that bridge functionality with aesthetics. Discover more about Subrata’s journey, technical expertise, and passion for web development in the About Me section, view recent projects, and learn how Subrata can help bring your web application ideas to life. Connect directly through the Contact Me page to collaborate on your next digital project. Whether you’re a business looking to enhance your online presence or a team in need of development support, Subrata Ghosh’s experience in full stack development is here to help. Let’s create something amazing together!",
     url: "https://www.subrataghosh.in",
     siteName: "Subrata Ghosh",
     type: "website",
@@ -59,7 +59,7 @@ export default function RootLayout({
         "url": "https://www.subrataghosh.in",
         "image": "https://www.subrataghosh.in/imgs/subrata-ghosh.png",
         "jobTitle": "Full Stack Web Application Developer",
-        "description": "Subrata Ghosh is a Full Stack Developer with expertise in building efficient and user-friendly web applications.",
+        "description": "Explore the professional portfolio of Subrata Ghosh, a skilled Full Stack Web Application Developer with expertise in crafting dynamic, responsive, and user-friendly web applications. With proficiency in both front-end and back-end technologies, including HTML, CSS, JavaScript, and popular frameworks, Subrata creates innovative digital solutions that bridge functionality with aesthetics. Discover more about Subrata’s journey, technical expertise, and passion for web development in the About Me section, view recent projects, and learn how Subrata can help bring your web application ideas to life. Connect directly through the Contact Me page to collaborate on your next digital project. Whether you’re a business looking to enhance your online presence or a team in need of development support, Subrata Ghosh’s experience in full stack development is here to help. Let’s create something amazing together!",
         "author": {
           "@type": "Person",
           "name": "Subrata Ghosh",
