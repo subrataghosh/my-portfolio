@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.subrataghosh.in/subrata-ghosh.png", 
+        url: "https://www.subrataghosh.in/imgs/subrata-ghosh.png", 
         width: 800,
         height: 600,
         alt: "Subrata Ghosh"
@@ -42,7 +42,7 @@ export default function RootLayout({
         "name": "Subrata Ghosh",
         "telephone": "+918420982123",
         "url": "https://www.subrataghosh.in",
-        "image": "https://www.subrataghosh.in/subrata-ghosh.png",
+        "image": "https://www.subrataghosh.in/imgs/subrata-ghosh.png",
         "jobTitle": "Full Stack Web Application Developer",
         "description": "Subrata Ghosh is a Full Stack Developer with expertise in building efficient and user-friendly web applications.",
         "worksFor": {
