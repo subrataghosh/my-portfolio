@@ -1,4 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<sitemap><loc>https://www.subrataghosh.in/sitemap-0.xml</loc></sitemap>
-</sitemapindex>
+<urlset
+	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://www.subrataghosh.in/blog</loc>
+		<lastmod>2024-10-26T03:33:38.133Z</lastmod>
+	</url>
+	<url>
+		<loc>https://www.subrataghosh.in/contact</loc>
+		<lastmod>2024-10-26T03:33:38.133Z</lastmod>
+	</url>
+	<url>
+		<loc>https://www.subrataghosh.in/portfolio</loc>
+		<lastmod>2024-10-26T03:33:38.133Z</lastmod>
+	</url>
+	<url>
+		<loc>https://www.subrataghosh.in/about</loc>
+		<lastmod>2024-10-26T03:33:38.133Z</lastmod>
+	</url>
+	<url>
+		<loc>https://www.subrataghosh.in/services</loc>
+		<lastmod>2024-10-26T03:33:38.133Z</lastmod>
+	</url>
+	<url>
+		<loc>https://www.subrataghosh.in</loc>
+		<lastmod>2024-10-26T03:33:38.133Z</lastmod>
+	</url>
+</urlset>
