@@ -62,7 +62,8 @@ export default function RootLayout({
         "description": "Subrata Ghosh is a Full Stack Developer with expertise in building efficient and user-friendly web applications.",
         "author": {
           "@type": "Person",
-          "name": "Subrata Ghosh"
+          "name": "Subrata Ghosh",
+          "url": "https://www.subrataghosh.in"
         },
         "worksFor": {
           "@type": "Organization",
