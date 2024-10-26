@@ -12,10 +12,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Subrata Ghosh",
-  description: "'Developer | Senior Software Engineer | Technology Enthusiast'",
+  description: "Subrata Ghosh, a skilled Full Stack Developer specializing in building efficient and user-friendly web applications. Learn more about Subrata's projects, skills, and expertise in modern web development.",
+  keywords: "Subrata Ghosh, Full Stack Developer, Software Engineer, Web Development, Front-end Development, Back-end Development, JavaScript, React, Node.js, MongoDB",
   openGraph: {
     title: "Subrata Ghosh",
-    description: "'Developer | Senior Software Engineer | Technology Enthusiast'",
+    description: "Subrata Ghosh, a skilled Full Stack Developer specializing in building efficient and user-friendly web applications. Learn more about Subrata's projects, skills, and expertise in modern web development.",
     url: "https://www.subrataghosh.in",
     siteName: "Subrata Ghosh",
     type: "website",
@@ -92,8 +93,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" />
-        
-        {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
