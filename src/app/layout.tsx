@@ -49,13 +49,21 @@ export default function RootLayout({
 
     const jsonLdData = {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Subrata Ghosh",
+        "@type": "Article",
+        "headline": "Subrata Ghosh",
         "telephone": "+918420982123",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.subrataghosh.in/about/"
+        },
         "url": "https://www.subrataghosh.in",
         "image": "https://www.subrataghosh.in/imgs/subrata-ghosh.png",
         "jobTitle": "Full Stack Web Application Developer",
         "description": "Subrata Ghosh is a Full Stack Developer with expertise in building efficient and user-friendly web applications.",
+        "author": {
+          "@type": "Person",
+          "name": "Subrata Ghosh"
+        },
         "worksFor": {
           "@type": "Organization",
           "name": "TwoPiRadian Infotech Pvt Ltd"
@@ -66,10 +74,10 @@ export default function RootLayout({
           "https://www.facebook.com/share/127C5VyWhNH"
         ],
         "knowsAbout": [
+          "Full Stack Developer",
           "Web Development",
           "Front-end Development",
           "Back-end Development",
-          "Full Stack Developer",
           "Java",
           "JavaScript",
           "React",
@@ -82,7 +90,9 @@ export default function RootLayout({
           "email": "mailto:subrata.ghosh.ece@gmail.com",
           "contactType": "Customer Support",
           "areaServed": "Worldwide",
-          "availableLanguage": ["English"]
+          "availableLanguage": [
+            "English"
+          ]
         },
         "address": {
           "@type": "PostalAddress",
