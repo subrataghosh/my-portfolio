@@ -50,12 +50,12 @@ const Sidebar = () => {
             </Link>
           </li>
         </ul>
-        <div className="copyright">
+        {/* <div className="copyright">
           Hosted at  {"  "}
           <a href="https://vercel.com/" style={{'color':'#302e4d'}} target="_blank" rel="noopener noreferrer">
             <strong>Vercel.</strong>
           </a>
-        </div>
+        </div> */}
       </div>
     </aside>
   );
